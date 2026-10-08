@@ -1,0 +1,212 @@
+@import "tailwindcss";
+
+@plugin "tailwind-clamp" {
+  minSize: 25rem;
+  maxSize: 80rem;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  background-color: #ffffff;
+  color: #ffffff;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body {
+  background-color: #ffffff;
+  color: #ffffff;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a,
+[role="button"],
+input,
+select,
+textarea {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+html {
+  scrollbar-gutter: stable both-edges;
+}
+
+body {
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Hero Headline / Title Typography Style */
+.hero-heading-title {
+  font-family: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(2.2rem, 3.6vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  word-break: break-word;
+}
+
+/* Hero Description / Subtitle Base Typography Style (Standard / No-Scale) */
+.hero-desc-style {
+  font-family: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(1rem, 1.7vw, 2rem);
+  font-weight: 400;
+  line-height: 1.625;
+  word-break: break-word;
+}
+
+.hero-desc-style1 {
+  font-family: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(0.7rem, 1.3vw, 1.3rem);
+  font-weight: 400;
+  line-height: 1.625;
+  word-break: break-word;
+}
+
+.hero-desc-style2 {
+  font-family: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(0.9rem, 1.4vw, 1.4rem);
+  font-weight: 400;
+  line-height: 1.40;
+  word-break: break-word;
+}
+
+/* Separate Modifier Class for text rendered inside 2x scaled GSAP containers */
+.hero-desc-scaled-2x {
+  font-size: clamp(0.7rem, 0.85vw, 1rem) !important;
+}
+
+.normal-word {
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.big-word {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+
+
+@keyframes logoZoomInOut {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.logo-active-zoom {
+  animation: logoZoomInOut 2.5s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+@keyframes brandSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.brand-spin {
+  animation: brandSpin 1s linear infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+
+/* Custom dropdown select styles with spaced down arrow */
+.custom-select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23374151' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 8l4 4 4-4'/%3e%3c/svg%3e") !important;
+  background-position: right 1rem center !important;
+  background-repeat: no-repeat !important;
+  background-size: 1.25em 1.25em !important;
+  padding-right: 2.75rem !important;
+}
+
+.custom-select-sm {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%234b5563' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 8l4 4 4-4'/%3e%3c/svg%3e") !important;
+  background-position: right 0.75rem center !important;
+  background-repeat: no-repeat !important;
+  background-size: 1em 1em !important;
+  padding-right: 2.25rem !important;
+}
+
+.status-select-pill {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23374151' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.2' d='M6 8l4 4 4-4'/%3e%3c/svg%3e") !important;
+  background-position: right 0.65rem center !important;
+  background-repeat: no-repeat !important;
+  background-size: 0.9em 0.9em !important;
+  padding-right: 1.85rem !important;
+}
+
+/* Lenis smooth scroll performance styles */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Floating image performance: isolate layout/style recalc to this subtree */
+.floating-images-wrapper {
+  contain: layout style;
+  isolation: isolate;
+}
+
+/* GPU layer promotion fallback for float images */
+.float-img {
+  will-change: transform, opacity;
+}

@@ -1,0 +1,686 @@
+{
+  "navbar": {
+    "who_we_are": "About FujiSakura",
+    "what_we_do": "Services & Solutions",
+    "industries": "Sectors",
+    "ai_services": "AI & Innovation",
+    "career": "Join Our Team",
+    "contact_us": "Let’s Talk ➜",
+    "contact_us_mobile": "Let’s Talk"
+  },
+  "hero": {
+    "subtitle_title": "Transform bold ideas into digital solutions that move your business forward",
+    "subtitle": "At Fujisakura, we combine engineering excellence, human-centered design, and emerging technologies to create powerful digital experiences that help ambitious businesses grow, adapt, and lead.",
+    "explore_services": "Explore Our Services",
+    "project_1_title": "50+",
+    "project_1_desc": "Projects Successfully Delivered Across Multiple Industries",
+    "project_1_category": "Industry Expertise",
+    "project_2_title": "8+ Years",
+    "project_2_desc": "A trusted technology partner with a strong track record of successful project deliveries",
+    "project_2_category": "Proven Experience",
+    "project_3_title": "80%",
+    "project_3_desc": "Experienced in collaborating with Japanese and global clients to ensure clear communication and project success",
+    "project_3_category": "Bilingual Engineers",
+    "project_4_title": "100%",
+    "project_4_desc": "Japanese Language Training Institutional Academic Collaboration Global Japan Placement Strategy",
+    "project_4_category": "Education & Japanese Language Enablement",
+    "turning_vision": "Engineering the future of digital business",
+    "trusted_by": "Trusted",
+    "businesses": "Technology",
+    "technology": "Meaningful",
+    "driven_by": "Innovation",
+    "innovation": "Lasting Impact",
+    "about_desc": "From artificial intelligence to digital transformation, Fujisakura helps businesses use emerging technology to work smarter, respond faster, and grow stronger and brings together engineering excellence, emerging technologies, and business insight to create dependable digital solutions that help organizations grow, adapt, and succeed in a changing world.",
+    "why_choose": "Why Choose",
+    "why_choose_desc": "Fujisakura deliver scalable web, mobile, and enterprise solutions that empower businesses to grow, adapt and thrive in an increasingly digital world. By combining engineering excellence, innovative thinking, agile methodologies and a deep understanding of our clients objectives, we create technology solutions that are secure, high-performing, and built for long-term success.",
+    "why_choose_desc1": "From initial strategy and design to development, deployment and continuous improvement, our reliable end-to-end execution ensures consistent quality, measurable value, sustainable business growth and succeed in a changing world."
+  },
+  "provides": {
+    "mobile_app_title": "Mobile Application Development",
+    "mobile_app_desc": "We build intuitive, high performance mobile applications for Android, iOS, and cross-platform environments. From strategy and UI/UX design to development, deployment, maintenance and ongoing support, we create seamless mobile experiences that engage users, support business growth and perform reliably over time.",
+    "mobile_app_points": "We create high-performance mobile applications for iOS and Android, combining intuitive UI/UX design with scalable and secure technology. Our solutions help businesses deliver seamless mobile experiences across devices.",
+    "sap_title": "SAP Solutions & Services",
+    "sap_desc": "We streamline business operations with end-to-end SAP consulting, implementation, integration, migration, maintenance, and support services. Our solutions help organizations optimize processes, improve efficiency, and ensure seamless operations through secure, scalable, and reliable SAP systems.",
+    "sap_points": "We provide reliable cloud solutions that help businesses migrate, manage, and scale their infrastructure efficiently. From cloud architecture to continuous monitoring, we build secure and flexible systems for modern enterprises.",
+    "cloud_title": "Cloud & Mobility",
+    "cloud_desc": "Build secure, scalable cloud platforms and mobile solutions that connect your business anywhere, anytime. We combine seamless mobility with powerful data portals, predictive analytics and clear visualizations to help you make faster, smarter decisions.",
+    "cloud_points": "Empower your business with secure cloud solutions and mobility services that enhance flexibility and productivity.",
+    "core_services": "Our Core Services",
+    "more_services": "More Services"
+  },
+  "values": {
+    "section_title": "Our Core Values",
+    "section_subtitle": "The principles that inspire our people, strengthen our partnerships, and guide us in creating meaningful digital solutions.",
+    "value_1_title": "Client-Centric Thinking",
+    "value_1_detail": "For any business, customers are always at the center. Being a leading web and mobile application development company, our definition goes beyond our direct customers. We always start from where you are with your ideas and we think from YOUR end customers perspectives, their pain areas and devise a solution that solves core problems to benefit your business.",
+    "value_2_title": "Collaborative Spirit",
+    "value_2_detail": "Communication is the Key. We tend to over-communicate at times. Although sounds overwhelming, but eventually it works wonders for our client business. When our development team collaborates with our clients sitting a thousand miles away, it's apparent that we stay in touch with platforms and mediums that allow effectiveness, transparency, and accuracy in an effective collaboration.",
+    "value_3_title": "Commitment to Excellence",
+    "value_3_detail": "With great years of experience in the IT software development industry, we have a great set of internal frameworks with best-in-class infrastructure that enables us to deliver solutions with superior quality, at all times. All these years, we have learned how to prevent failures and replicate success. We don't just brag about quality. We define and deliver it on time.",
+    "read_more": "READ MORE",
+    "close": "CLOSE",
+    "vision_title": "Vision",
+    "vision_desc": "We envision a future where technology operations become a catalyst for business transformation. Fujisakura is committed to building intelligent, scalable and industry-ready solutions that help organizations move forward with confidence. By setting bold goals, continuously improving, and challenging ourselves to exceed expectations, we are shaping a stronger digital future-one achievement at a time.",
+    "mission_title": "Mission",
+    "mission_desc": "We are driven to help businesses move forward, stay competitive, and achieve more. By combining emerging technologies, passionate people, advanced infrastructure, and practical solutions, Fujisakura transforms business challenges into opportunities for growth. We remain committed to excellence in every engagement and define our success through the trust and achievements of our clients and partners."
+  },
+  "domains": {
+    "healthcare": "Healthcare",
+    "bfsi": "BFSI",
+    "education": "Education",
+    "sports": "Sports",
+    "agriculture": "Agriculture",
+    "logistics": "Logistics",
+    "domains_title": "Industries",
+    "domains_subtitle": "We Serve",
+    "explore": "Explore"
+  },
+  "directors": {
+    "our_board_of": "Our Board Of",
+    "directors": "DIRECTORS",
+    "representative": "Representative",
+    "director": "Director",
+    "yozo_minowa": "Yozo Minowa",
+    "satheesh_chelliah": "Satheesh Chelliah",
+    "satheeshkannan": "Satheeshkannan",
+    "chandrasekaran": "Chandrasekaran",
+    "madhavaramanujam": "Madhavaramanujam",
+    "rajendran": "Rajendran",
+    "pazhamalai": "Pazhamalai",
+    "jagadeesan": "Jagadeesan",
+    "yozo_minowa_full": "Yozo Minowa",
+    "satheesh_chelliah_full": "Satheesh Chelliah",
+    "satheeshkannan_chandrasekaran_full": "Satheeshkannan Chandrasekaran",
+    "madhavaramanujam_rajendran_full": "Madhavaramanujam Rajendran",
+    "pazhamalai_jagadeesan_full": "Pazhamalai Jagadeesan"
+  },
+  "testimonials": {
+    "testimonials": "Testimonials",
+    "stories_from": "Stories From",
+    "clients": "Clients",
+    "happy_customers": "More than 80+ happy customers",
+    "story": "Story",
+    "item1_name": "Samy Draxter",
+    "item1_designation": "Director Human Services Department",
+    "item1_review": "Honestly they were amazing! Very on top of things, helpful and helped us on what we thought would be impossible.",
+    "item2_name": "Sophia Brown",
+    "item2_designation": "Marketing Director",
+    "item2_review": "An outstanding partner from start to finish. The final product was beautiful, fast, and exactly what our business needed.",
+    "item3_name": "Emily Watson",
+    "item3_designation": "Product Manager",
+    "item3_review": "The team exceeded our expectations. Communication was excellent, and every milestone was completed exactly as planned.",
+    "item4_name": "John Anderson",
+    "item4_designation": "CEO",
+    "item4_review": "Working with them was a fantastic experience. They delivered our project on time with exceptional quality."
+  },
+  "about": {
+    "about_label": "About",
+    "fujisakura": "FujiSakura",
+    "about_subhead": "Driving Digital Transformation with Global Standards",
+    "desc_1": "FujiSakura Technologies is a full-service software development and IT consulting firm operating across India and Japan. We empower global businesses from high-growth startups to large enterprises—by designing, building and modernizing business-critical software systems.",
+    "desc_2": "FujiSakura Technologies transform complex business requirements into intuitive, high-impact digital solutions. Founded on a culture of precision, transparency, and technical excellence, we serve as a strategic technology partner for organizations navigating the complexities of modern digital acceleration.",
+    "desc_3": "Driven by our core vision of cross-border synergy, we bridge technological demand with elite engineering talent, upholding the highest standards of operational transparency, cultural alignment and bulletproof software delivery."
+  },
+  "information": {
+    "name_of": "Name of",
+    "date_of_establishment": "Date of Establishment",
+    "directors_label": "Directors",
+    "representative_director": "Representative Director",
+    "country_japan": "JAPAN",
+    "country_india": "INDIA",
+    "japan_company_name": "FUJISAKURA TECHNOLOGIES INC.",
+    "india_company_name": "FUJISAKURA TECHNOLOGIES PRIVATE LIMITED.",
+    "japan_establishment_date": "June 2018",
+    "india_establishment_date": "March 2018"
+  },
+  "milestone": {
+    "milestones": "Milestones",
+    "data": [
+      {
+        "year": "2018",
+        "events": [
+          {
+            "date": "March",
+            "text": "Operations officially launched in India with an initial core team of 7 software engineering professionals."
+          },
+          {
+            "date": "June",
+            "text": "Formal incorporation of the Japan entity, led by Representative Director Satheesh Kannan, establishing our dual-market presence."
+          },
+          {
+            "date": "December",
+            "text": " Strategic expansion into Enterprise Solutions, successfully kicking off our inaugural client project."
+          }
+        ]
+      },
+      {
+        "year": "2019",
+        "events": [
+          {
+            "date": "January",
+            "text": "Workforce expansion, scaling the core team to 15 engineering and technical professionals."
+          },
+          {
+            "date": "April",
+            "text": " Official launch of the SAP Solutions practice, marked by the successful kickoff of our inaugural SAP engagement."
+          },
+          {
+            "date": "December",
+            "text": " Achievement of formal ISO and Information Security Management System (ISMS) certifications, reinforcing enterprise-grade compliance and data security standards."
+          }
+        ]
+      },
+      {
+        "year": "2020",
+        "events": [
+          {
+            "date": "January",
+            "text": " Scaled organizational capacity to 30 employees while launching the dedicated SAP Ariba Practice Division to expand procurement solution capabilities."
+          },
+          {
+            "date": "March",
+            "text": "Strategic talent acquisition milestone, expanding the global delivery team to 45 technical professionals."
+          },
+          {
+            "date": "October",
+            "text": " Executive leadership transition marked by the appointment of Yozo Minowa as Representative Director."
+          }
+        ]
+      },
+      {
+        "year": "2021",
+        "events": [
+          {
+            "date": "May",
+            "text": "Formal inauguration of the Java Application Engineering Practice, highlighted by the successful kickoff of our inaugural enterprise Java project."
+          }
+        ]
+      },
+      {
+        "year": "2022",
+        "events": [
+          {
+            "date": "January",
+            "text": "Workforce expansion milestone, scaling total head count to 60 specialized technical and delivery professionals."
+          },
+          {
+            "date": "March",
+            "text": "Strategic healthcare sector entry, establishing a key technology partnership with a leading dental organization to drive digital healthcare solutions."
+          },
+          {
+            "date": "July",
+            "text": "Formal induction into NASSCOM as an accredited industry corporate member, deepening alignment with global IT leadership standards."
+          }
+        ]
+      },
+      {
+        "year": "2023",
+        "events": [
+          {
+            "date": "April",
+            "text": "International footprint expansion into the United States market, broadening global delivery capabilities and enterprise client engagement."
+          }
+        ]
+      },
+      {
+        "year": "2024",
+        "events": [
+          {
+            "date": "January",
+            "text": "Strategic portfolio evolution, integrating advanced AI and Machine Learning Solutions into our enterprise offerings."
+          },
+          {
+            "date": "May",
+            "text": "Talent growth milestone, scaling our multi-disciplinary engineering workforce beyond 70 professionals across global operations."
+          }
+        ]
+      },
+      {
+        "year": "2025",
+        "events": [
+          {
+            "date": "January",
+            "text": "European footprint expansion into the German market, broadening cross-border solution delivery and global client engagements."
+          },
+          {
+            "date": "September",
+            "text": " Strategic educational partnership established to deliver specialized Japanese language and cultural training, enhancing cross-border team integration and client communications."
+          }
+        ]
+      },
+      {
+        "year": "2026",
+        "events": [
+          {
+            "date": "February",
+            "text": " Southeast Asian expansion marked by the launch of operations in Singapore, strengthening global delivery networks and regional enterprise engagement."
+          }
+        ]
+      }
+    ]
+  },
+  "certificate": {
+    "title_prefix": "Certifications & Membership",
+    "iso_9001_title": "ISO 9001:2015",
+    "iso_9001_subtitle": "(Quality & Compliance)",
+    "iso_9001_desc": "ISO 9001:2015 Certification: Adherence to the internationally recognized Quality Management System (QMS) standard, demonstrating FujiSakura's commitment to delivering enterprise-grade products and services through systematic process controls, continuous improvement, rigorous customer satisfaction metrics, and full regulatory compliance.",
+    "iso_9001_label": "Quality Management System",
+    "iso_27001_title": "ISO 27001:2022",
+    "iso_27001_subtitle": "(Information Security & Governance)",
+    "iso_27001_desc": "ISO 27001:2022 Certification: Adherence to international standards for Information Security Management Systems (ISMS), validating FujiSakura's proactive risk management, robust data protection controls, and rigorous safeguarding of enterprise information assets across all global delivery operations.",
+    "iso_27001_label": "Information Security",
+    "nasscom_title": "NASSCOM",
+    "nasscom_subtitle": "(Industry Accreditation & Ecosystem Partnerships)",
+    "nasscom_desc": "NASSCOM Corporate Membership: Accredited member of the National Association of Software and Service Companies (NASSCOM), India's premier technology industry body. This partnership reinforces FujiSakura's commitment to driving technical innovation, implementing global best practices, and actively collaborating within the international technology ecosystem. Fujisakura technologies benefitted by the Policy Advocacy and Ecosystem Support of NASSCOM's ecosystem.",
+    "nasscom_label": "Industry Association",
+    "certification": "Certification",
+    "membership": "Membership"
+  },
+  "wedo": {
+    "our": "Our",
+    "services": "Services",
+    "desc": "At FujiSakura Technologies, we partner with enterprise leaders and high-growth businesses to transform complex operational challenges into high-performance digital solutions. Combining deep technical expertise with international industry standards, we engineer secure, future-ready software that drives sustainable digital transformation and accelerates enterprise growth."
+  },
+  "services": {
+    "web_title": "Web Application Engineering",
+    "web_desc": "We build high-performance, responsive, and scalable web applications engineered to align with your enterprise goals.",
+    "web_f1": "Custom Web Build",
+    "web_f2": "Full-Stack Engineering",
+    "web_f3": "Responsive UI/UX",
+    "sap_title": "SAP Solutions, Enterprise Services & Consulting",
+    "sap_desc": "Driving operational excellence through specialized SAP implementation, custom integration, cloud migration and managed support.",
+    "sap_f1": "SAP Advisory & Rollout",
+    "sap_f2": "SAP Systems Integration & Solutions",
+    "sap_f3": "24/7 SAP Support & Maintenance",
+    "techops_title": "Technology Operations & Managed Infrastructure",
+    "techops_desc": "Drive continuous business continuity and peak system performance with proactive IT management, automated operations, and end-to-end infrastructure oversight.",
+    "techops_f1": "IT Infrastructure Management",
+    "techops_f2": "DevOps & CI/CD Pipelines",
+    "techops_f3": "Performance Observability",
+    "mobile_title": "Next-Gen Mobile Solutions",
+    "mobile_desc": "Scalable, feature-rich iOS, Android, and cross-platform mobile apps engineered to elevate user engagement and streamline digital interactions.",
+    "mobile_f1": "Native iOS & Android Apps",
+    "mobile_f2": "Multi-Platform App Architecture",
+    "mobile_f3": "Lifecycle Support & Optimization",
+    "cloud_title": "Cloud Solutions & Mobile Transformation",
+    "cloud_desc": "Modernize your IT footprint with resilient cloud infrastructure and enterprise mobility frameworks engineered for seamless global performance.",
+    "cloud_f1": "Cloud Migration Services",
+    "cloud_f2": "Multi-Cloud & Hybrid Infrastructure",
+    "cloud_f3": "Enterprise Mobile Ecosystems",
+    "consulting_title": "IT Consulting & Global Delivery Outsourcing",
+    "consulting_desc": "Accelerate digital transformation and optimize operational overhead by leveraging our strategic IT advisory, cross-border engineering teams, and high-quality offshore delivery models.",
+    "consulting_f1": "Digital Architecture Consulting",
+    "consulting_f2": "Managed Dedicated Development Teams",
+    "consulting_f3": "Strategic CIO & Technology Advisory",
+    "edu_title": "Education & Japanese Language Enablement",
+    "edu_desc": "We partner with universities and academic institutions to deliver comprehensive Japanese language training, cultural orientation, and direct career pathways for students targeting professional opportunities in Japan.",
+    "edu_f1": "Japanese Language Training",
+    "edu_f2": "Institutional Academic Collaboration",
+    "edu_f3": "Global Japan Placement Strategy"
+  },
+  "industries_page": {
+    "our": "Our",
+    "industries": "Industries",
+    "desc_1": "At FujiSakura Technologies, we combine deep domain expertise with cutting-edge engineering to solve complex sector-specific challenges. We partner with global enterprises across key industries to accelerate digital transformation, optimize operations, and build resilient, future-ready business models.",
+    "desc_2": "We empower organizations across diverse sectors to navigate rapid digital evolution. By pairing vertical industry insights with robust engineering standards, FujiSakura turns complex sector challenges into scalable, high-performance digital architectures."
+  },
+  "industries_list": {
+    "food-beverages": {
+      "title": "Food, Beverage & QSR Technology",
+      "desc": "Driving digital evolution across the food service ecosystem. We engineer scalable platform architectures, real-time demand forecasting, and automated supply chain intelligence to optimize operational efficiency, enhance guest experiences, and maximize profitability for modern food enterprises.",
+      "points": [
+        "Multi-Brand Cloud Kitchen Management",
+        "AI Inventory & Waste Minimization",
+        "Automated Order Fulfilment & KDS",
+        "Smart Supply Chain Tracking",
+        "Data-Driven Customer Loyalty Ecosystems"
+      ]
+    },
+    "entertainment": {
+      "title": "Media, Streaming & Interactive Tech",
+      "desc": "Empowering studios, broadcasters, and digital publishers with resilient media ecosystems. From cloud-native encoding and automated monetization to interactive audience engagement tools, we deliver end-to-end technology solutions that drive subscriber retention and global reach.",
+      "points": [
+        "Scalable OTT & Streaming Infrastructure",
+        "AI-Driven Viewer Personalization",
+        "Zero-Delay Live Broadcasting",
+        "Advanced DRM & Rights Governance",
+        "Multi-Device & Connected TV Deployment"
+      ]
+    },
+    "automobile": {
+      "title": "Automotive Engineering & Mobility Tech",
+      "desc": "Accelerating the shift toward Software-Defined Vehicles (SDVs) and intelligent transport ecosystems. We partner with OEMs, EV innovators, and Tier-1 suppliers to engineer secure edge-to-cloud vehicle telemetry, autonomous fleet intelligence, and Industry 4.0 smart manufacturing architectures.",
+      "points": [
+        "Software-Defined Vehicle (SDV) Platforms",
+        "EV Battery Intelligence & BMS Software",
+        "Smart Factory & Assembly Line Automation",
+        "Autonomous Driving & ADAS Data Analytics",
+        "Connected Fleet Management Systems"
+      ]
+    },
+    "ecommerce": {
+      "title": "Ecommerce & Digital Retail Platforms",
+      "desc": "Architecting high-conversion, composable commerce platforms and AI-driven retail ecosystems. We empower global brands and enterprise retailers to deliver frictionless omnichannel shopping, hyper-personalized customer journeys, and automated supply chain fulfillment at scale.",
+      "points": [
+        "Headless & Microservices Commerce",
+        "Agentic AI Search & Recommendation",
+        "Global Payment Gateway Integration",
+        "Real-Time Multi-Location Inventory Sync",
+        "Frictionless One-Click Checkout Systems"
+      ]
+    },
+    "reservation": {
+      "title": "Travel, Hospitality & Reservation Tech",
+      "desc": "Architecting mission-critical booking engines and cloud-native reservation platforms. We build high-throughput transaction pipelines, dynamic yield optimization tools, and AI-driven itinerary engines engineered to handle massive booking concurrency, zero-downtime seat mapping, and global channel distribution seamlessly.",
+      "points": [
+        "High-Volume Booking Engine Architecture",
+        "Real-Time Dynamic Pricing & Inventory Sync",
+        "Global Payment Gateway & Settlement Orchestration",
+        "Automated Multi-Channel Distribution (GDS/NDC)",
+        "Instant Ticket Issuance & Self-Service Rebooking"
+      ]
+    },
+    "healthcare": {
+      "title": "Healthcare, MedTech & Life Sciences",
+      "desc": "Architecting secure, HIPAA/GDPR-compliant healthcare ecosystems and AI-powered diagnostic platforms. We partner with hospital networks, MedTech innovators, and research centers to engineer interoperable EHR frameworks, Internet of Medical Things (IoMT) telemetry, and predictive clinical workflows that elevate patient care and operational efficiency.",
+      "points": [
+        "AI Diagnostic Imaging & Clinical Analytics",
+        "FHIR & HL7 Interoperable EHR Integration",
+        "HIPAA / GDPR Zero-Trust Data Governance",
+        "IoMT & Remote Patient Monitoring",
+        "Automated Clinical & Administrative Workflows"
+      ]
+    },
+    "bfsi": {
+      "title": "BFSI & Financial Technology",
+      "desc": "Engineering secure, high-concurrency fintech architectures, open banking APIs, and AI-driven risk management ecosystems. We partner with financial institutions, insurtechs, and global enterprises to modernize core banking legacy systems, automate RegTech compliance, and deliver real-time, Zero-Trust transaction processing.",
+      "points": [
+        "Real-Time AI Fraud & Risk Intelligence",
+        "Core Banking & Ledger Modernization",
+        "Open Banking & Multi-Currency Payment APIs",
+        "Enterprise SAP Ariba & ERP Integration",
+        "Automated RegTech & Compliance Governance"
+      ]
+    },
+    "education": {
+      "title": "Education & EdTech Digital Learning",
+      "desc": "Empowering educational institutions and corporate learning divisions with resilient digital infrastructure. From automated administrative workflows to global career pathway integrations, we deliver scalable academic solutions built to enhance learning outcomes and foster international collaboration.",
+      "points": [
+        "LMS & e-learning platforms",
+        "Student performance analytics",
+        "Campus management systems",
+        "AI adaptive learning tools",
+        "Virtual classroom integration"
+      ]
+    },
+    "sports": {
+      "title": "Sports, Analytics & Digital Athletic Performance",
+      "desc": "Architecting next-generation sports intelligence platforms, real-time biometric telemetry pipelines, and immersive fan engagement ecosystems. We partner with professional leagues, sports franchises, and venue operators to integrate computer vision tracking, predictive performance analytics, and smart stadium IoT architectures that elevate both athlete performance and live spectator experiences.",
+      "points": [
+        "Live athlete telemetry streaming",
+        "Fan engagement mobile apps",
+        "Smart stadium IoT systems",
+        "Performance analytics dashboards",
+        "Tournament management platforms"
+      ]
+    },
+    "agriculture": {
+      "title": "Agritech, Digital Farming & Smart Agriculture",
+      "desc": "Architecting resilient AgTech ecosystems, IoT sensor networks, and AI-driven agricultural analytics. We partner with agribusinesses, farming cooperatives, and AgriTech ventures to integrate autonomous irrigation systems, satellite crop monitoring, and predictive climate modeling that maximize yield, conserve resources, and ensure sustainable food security.",
+      "points": [
+        "IoT soil & weather sensors",
+        "AI crop yield forecasting",
+        "Smart irrigation automation",
+        "Supply chain traceability",
+        "Farm management dashboards"
+      ]
+    },
+    "logistics": {
+      "title": "Logistics & Supply Chain Tech",
+      "desc": "Empowering enterprise freight carriers and distribution networks with resilient digital backbones. From centralized yard management systems to automated last-mile dispatching, we deliver end-to-end logistics platforms built for high-transaction throughput, complete inventory visibility, and zero-downtime execution.",
+      "points": [
+        "Real-time GPS fleet tracking",
+        "AI route optimization",
+        "Automated warehouse management",
+        "Predictive vehicle maintenance",
+        "Last-mile delivery solutions"
+      ]
+    },
+    "video-games": {
+      "title": "Gaming Tech & Interactive Media",
+      "desc": "Architecting resilient multiplayer backends, low-latency cloud gaming pipelines, and interactive game economies. We empower game studios, publishers, and esports organizations with high-concurrency server orchestration, real-time telemetry, and enterprise-grade anti-cheat architectures engineered for seamless global scale.",
+      "points": [
+        "Scalable Multiplayer Server Architecture",
+        "Edge Cloud Rendering & Game Streaming",
+        "Real-Time LiveOps & Telemetry Analytics",
+        "Esports Broadcasting & Tournament Engines",
+        "Advanced Anti-Cheat & Security Frameworks"
+      ]
+    },
+    "cloud": {
+      "title": "Cloud & Infrastructure Engineering",
+      "desc": "Engineering resilient, high-availability cloud-native architectures and multi-cloud environments. We enable enterprise organizations to accelerate digital transformation, automate CI/CD delivery, enforce Zero-Trust security governance, and optimize infrastructure spend through continuous FinOps practices.",
+      "points": [
+        "Multi-Cloud & Hybrid Architecture",
+        "Zero-Trust Security & Compliance",
+        "Kubernetes & Microservices Orchestration",
+        "Infrastructure as Code (IaC)",
+        "Continuous FinOps & Cost Governance"
+      ]
+    }
+  },
+  "ai_services_page": {
+    "title_prefix": "AI Services &",
+    "title_highlight": "Innovation Hub",
+    "desc_1": "At FujiSakura, we pioneer enterprise-grade AI solutions that transform complex operational challenges into measurable business advantages. Combining deep cross-border engineering expertise with state-of-the-art machine learning models, we empower organizations to automate complex workflows, extract actionable predictive intelligence, and scale next-generation digital platforms. Whether deploying tailored Large Language Models (LLMs) or orchestrating full-stack AI integrations, we build secure, high-performance systems that drive commercial growth and strategic leadership."
+  },
+  "ai_services_list": {
+    "generative-ai": {
+      "title": "Generative AI Solutions & Co-Innovation",
+      "desc": "Unlock enterprise value with custom Generative AI architectures built for security, domain accuracy, and scale. We design bespoke Large Language Models (LLMs), multimodal generation systems, and Retrieval-Augmented Generation (RAG) pipelines that securely integrate with your private data infrastructure. Turn corporate knowledge into proprietary intelligence while maintaining strict data governance.",
+      "points": [
+        "Domain-Specific LLM Fine-Tuning",
+        "Production-Grade RAG Pipelines",
+        "Multimodal Generation Engines",
+        "Autonomous Agent Workflows",
+        "Private Cloud & On-premise AI Deployment"
+      ]
+    },
+    "machine-learning": {
+      "title": "Predictive ML & Decision Engines",
+      "desc": "Convert static corporate data into real-time competitive advantage. We architect bespoke machine learning models, predictive intelligence pipelines, and automated decision engines tailored to your core business logic. From high-accuracy demand forecasting to risk modeling and operational optimization, our production-grade ML algorithms transform historical metrics into actionable operational foresight.",
+      "points": [
+        "Custom Predictive Engines",
+        "Real-Time Forecasting Streams",
+        "Fraud & Anomaly Detection",
+        "Cross-System API Integration",
+        "Continuous Model Evolution"
+      ]
+    },
+    "computer-vision": {
+      "title": "Next-Gen Visual AI & Optics",
+      "desc": "Partner with FujiSakura to build next-generation visual AI capabilities. By combining cutting-edge deep learning frameworks with specialized camera telemetry, we deliver end-to-end computer vision platforms designed to optimize safety, automate manual quality checks, and scale spatial understanding across smart factories and commercial environments.",
+      "points": [
+        "Automated Visual QA",
+        "3D Spatial Analytics",
+        "Smart Facility Monitoring",
+        "Custom Neural Pipeline",
+        "Cross-Platform Integration"
+      ]
+    },
+    "nlp-llm": {
+      "title": "NLP & Autonomous AI Agents",
+      "desc": "Unlock the full value of your enterprise data with domain-adapted Large Language Models and autonomous agentic workflows. We build secure, high-accuracy Natural Language Processing pipelines that transform unstructured text, audio, and documents into actionable intelligence. From Retrieval-Augmented Generation (RAG) to multilingual enterprise search, our solutions ensure seamless knowledge retrieval with strict data privacy and governance.",
+      "points": [
+        "Intelligent Document Processing",
+        "Semantic Search & Discovery",
+        "Custom AI Agents & Copilots",
+        "Voice & Audio Analytics",
+        "Data Security & compliance"
+      ]
+    },
+    "ai-chatbots": {
+      "title": "AI Chatbots & Agentic Solutions",
+      "desc": "Elevate your customer engagement and internal operations with autonomous, decision-making AI agents. Moving beyond basic chatbots, our agentic architectures execute complex multi-step workflows, integrate directly into enterprise systems, and deliver personalized, human-grade interactions 24/7 across all digital touchpoints.",
+      "points": [
+        "Omnichannel AI Integration",
+        "Autonomous Task Execution",
+        "Enterprise System Connectivity",
+        "Intent Recognition & Escalation",
+        "Continuous Self-Learning"
+      ]
+    },
+    "mlops-cloud-ai": {
+      "title": "MLOps & Cloud AI",
+      "desc": "Transition machine learning from prototype to resilient production. We engineer robust MLOps and LLMOps infrastructure that automates model deployment, streamlines continuous training, and optimizes high-throughput model serving. By leveraging cloud-native architectures, GPU cluster orchestration, and real-time observability, we ensure your AI systems remain reliable, cost-efficient, and aligned with enterprise SLAs.",
+      "points": [
+        "Automated CI/CD for AI Systems",
+        "LLMOps & Fine-Tuning Infrastructure",
+        "GPU Cluster & Cost Optimization",
+        "Real-Time Observability & Drift Guard",
+        "Enterprise Security & Compliance"
+      ]
+    },
+    "ai-automation": {
+      "title": "AI Services & Innovation Hub",
+      "desc": "Transform static operational workflows into self-optimising, intelligent business execution. We engineer end-to-end hyperautomation platforms that combine Intelligent Document Processing (IDP), cognitive exception handling, and API-first orchestrators. By eliminating administrative bottlenecks and manual data handling, our architectures drastically accelerate processing speeds, reduce operational overhead, and guarantee zero-error execution.",
+      "points": [
+        "End-to-End Workflow Orchestration",
+        "Multi-Format Data Extraction",
+        "Operational Cost Reduction",
+        "Audit-Ready Compliance Control",
+        "Scalable Microservices Architecture"
+      ]
+    },
+    "ai-iot": {
+      "title": "AIoT & Edge Intelligence",
+      "desc": "Bridge physical operational hardware with cloud intelligence using next-generation AIoT architectures. We build real-time telemetry pipelines and deploy low-latency Edge AI directly onto embedded device firmware. From industrial asset monitoring to automated smart environments, our end-to-end IoT solutions deliver predictive maintenance, prevent costly downtime, and optimize device networks at scale.",
+      "points": [
+        "Embedded Edge-AI Firmware",
+        "Predictive Asset Maintenance",
+        "Industrial IoT (IIoT) Platforms",
+        "Real-Time Telemetry Streaming",
+        "End-to-End Edge Security"
+      ]
+    }
+  },
+  "industries": {
+    "read_more": "Read More",
+    "read_less": "Read Less"
+  },
+  "contact": {
+    "get_in_touch_prefix": "Get In",
+    "get_in_touch_highlight": "Touch",
+    "get_in_touch_desc": "We're always ready to connect. Whether you have a project in mind, need technical support, or want to explore how FujiSakura can support your business, we'd love to hear from you.",
+    "send_a_message": "Send A Message",
+    "full_name": "Full Name",
+    "email_address": "Email Address",
+    "subject": "Subject",
+    "phone_number": "Phone Number",
+    "phone_placeholder": "10 to 15 digits",
+    "how_can_we_help": "How Can We Help You",
+    "send_message": "Send Message",
+    "sending": "Sending...",
+    "success_message": "Your message has been sent successfully. Our team will get back to you shortly.",
+    "loading_map": "Loading Map...",
+    "view_map": "View Map",
+    "head_office": "Head Office",
+    "branch_office": "Branch Office",
+    "registered_office": "Registered Office",
+    "tokyo_title": "Tokyo, Japan",
+    "tokyo_company": "FujiSakura Technologies Inc",
+    "tokyo_address": "6F, Kitagawa Building,\n2-4-12 HigashiNihombashi, Chuo-Ku,\nTokyo 103-0004, Japan",
+    "tokyo_phone": "PH: 03-5829-6208",
+    "chennai_title": "Chennai, India",
+    "chennai_company": "FujiSakura Technologies Pvt. Ltd",
+    "chennai_address": "Plot No. 22 & 23, 1st Floor (1A & 1B),\nSri Durga Enclave - Phase II, River View Residency 2nd Street,\nKarapakkam, Chennai - 600 097, TamilNadu, India",
+    "chennai_phone": "Tel: +91-44-2952-0058",
+    "reg_title": "Chennai, India",
+    "reg_tag": "Registered HQ",
+    "reg_company": "FujiSakura Technologies",
+    "reg_address": "P.NO 81A, Vijayalakshmi APTS,\nMasuthi Street, Vedasalam Nagar,\nJaladianpet, Chennai-600100, India",
+    "error_name": "Full name is required.",
+    "error_email_required": "Email address is required.",
+    "error_email_invalid": "Please enter a valid email address.",
+    "error_phone_required": "Phone number is required.",
+    "error_message": "Please describe how we can help you.",
+    "error_recaptcha": "Please complete the reCAPTCHA verification.",
+    "error_generic": "Something went wrong. Please try again."
+  },
+  "career": {
+    "header_prefix": "Build Your Future",
+    "header_highlight": "With Us",
+    "header_desc": "At FujiSakura Technologies, we believe that great people build great technology. We are committed to creating innovative digital solutions while fostering a collaborative, inclusive, and growth-oriented workplace.",
+    "why_join_us": "Why Join Us?",
+    "why_join_1": "1. Work with modern technologies and innovative solutions.",
+    "why_join_2": "2. Contribute to global projects across diverse industries.",
+    "why_join_3": "3. Learn, grow, and advance your career through continuous development.",
+    "core_values": "Our Core Values",
+    "value_innovation": "+ Innovation",
+    "value_collaboration": "+ Collaboration",
+    "value_excellence": "+ Excellence",
+    "career_opportunities": "Career Opportunities",
+    "find_dream_job": "Find your next dream job with us.",
+    "loading": "Loading Positions…",
+    "experience": "Experience",
+    "notice_period": "Notice-Period",
+    "notes": "Language Proficiency",
+    "full_time": "Full Time",
+    "part_time": "Part Time",
+    "no_openings_title": "No Current Openings",
+    "no_openings_desc": "There are currently no active job openings available. Please check back later!",
+    "apply_for_position": "Apply for this Position",
+    "back_to_careers": "Back to Careers",
+    "job_description": "Job Description",
+    "key_responsibilities": "Key Responsibilities",
+    "required_skills": "Required Skills",
+    "apply_now": "Apply Now",
+    "full_name": "Your Name",
+    "email": "E-mail Address",
+    "phone": "Phone Number",
+    "phone_placeholder": "10 to 15 digits",
+    "resume": "Resume / CV",
+    "date_of_birth": "Date of birth",
+    "qualification": "Qualification",
+    "choose_file": "Choose File",
+    "no_file_chosen": "No File Chosen",
+    "pdf_limit": "PDF only, max 5 MB",
+    "jp_bilingual": "JPBilingual",
+    "level": "Level",
+    "submit_application": "Submit Application",
+    "submitting": "Submitting...",
+    "error_email_invalid": "Please enter a valid email address.",
+    "error_resume_required": "Please select a PDF resume before submitting.",
+    "error_recaptcha": "Please complete the reCAPTCHA verification.",
+    "error_jp_level": "Please select your Japanese proficiency level.",
+    "error_generic": "Something went wrong. Please try again.",
+    "error_failed": "Submission failed. Please try again.",
+    "error_name": "Full name is required.",
+    "error_email_required": "Email address is required.",
+    "error_dob": "Date of birth is required.",
+    "error_dob_future": "Date of birth cannot be in the future.",
+    "error_qualification": "Qualification is required.",
+    "error_phone_required": "Phone number is required.",
+    "success_toast": "Application Submitted Successfully! Thank you for applying.",
+    "loading_details": "Loading Position Details…",
+    "job_not_found": "This job is no longer available."
+  },
+  "footer": {
+    "partner_with_us": "Join us as a business partner",
+    "partner_connect": "Enter your email to connect with us",
+    "connect_us": "Let’s Connect",
+    "top_links": "Top Links",
+    "who_we_are": "About FujiSakura",
+    "what_we_do": "Services & Solutions",
+    "industries": "Sectors",
+    "ai_services": "AI & Innovation",
+    "careers": "Join Our Team",
+    "contact_us": "Let’s Talk Us",
+    "japan_phone": "Japan: 03-5829-6208",
+    "india_phone": "India: +91-44-2952-0058",
+    "follow_us": "Follow Us",
+    "copyright": "© 2026 FujiSakura Technologies Pvt. Ltd. All rights reserved.",
+    "privacy_policy": "Privacy Policy",
+    "company_policy": "Company Policy"
+  }
+}
