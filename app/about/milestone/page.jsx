@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
@@ -125,8 +125,8 @@ export default function Milestone() {
                 className="relative z-0 isolate w-full min-h-0 lg:min-h-screen py-4 sm:py-6 lg:py-0 overflow-hidden flex flex-col justify-center pt-0"
             >
                 <div className="absolute inset-0 z-0 pointer-events-none">
-                    <CldImage
-                        src="milestone"
+                    <Image quality={100}
+                        src="/FS-images/milestone.jpg"
                         alt=""
                         fill
                         priority

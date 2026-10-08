@@ -1,6 +1,6 @@
 "use client";
 
-import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
 export default function CareerHeader() {
@@ -52,8 +52,8 @@ export default function CareerHeader() {
                         </div>
 
                         <div className="w-[125px] sm:w-[160px] md:w-[clamp(160px,15vw,260px)] aspect-[4/3] rounded-tl-[clamp(20px,3vw,44px)] rounded-br-[clamp(20px,3vw,44px)] rounded-tr-none rounded-bl-none overflow-hidden relative shrink-0 shadow-md">
-                            <CldImage
-                                src="career-small"
+                            <Image quality={100}
+                                src="/FS-images/career-small.jpg"
                                 alt="Career Team"
                                 fill
                                 sizes="(max-width: 1024px) 200px, 260px"
@@ -65,8 +65,8 @@ export default function CareerHeader() {
 
                 <div className="w-full lg:w-1/2 flex items-stretch">
                     <div className="w-full aspect-[16/10] lg:aspect-auto lg:h-full min-h-[280px] sm:min-h-[380px] lg:min-h-[420px] rounded-tl-[clamp(30px,4vw,50px)] rounded-br-[clamp(30px,4vw,50px)] rounded-tr-none rounded-bl-none overflow-hidden relative shadow-lg">
-                        <CldImage
-                            src="career-big"
+                        <Image quality={100}
+                            src="/FS-images/career-big.jpg"
                             alt="Career Workspace"
                             fill
                             sizes="(max-width: 1024px) 100vw, 50vw"

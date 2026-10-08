@@ -2,7 +2,6 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
-import { CldImage } from "next-cloudinary";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
 function CarouselImage({ src, alt, fill, width, height, sizes, className, draggable }) {
@@ -10,7 +9,7 @@ function CarouselImage({ src, alt, fill, width, height, sizes, className, dragga
     const isLocalOrAbsolute = typeof src === "string" && (src.startsWith("/") || src.startsWith("http"));
     if (isLocalOrAbsolute) {
         return (
-            <Image
+            <Image quality={100}
                 src={src}
                 alt={alt || ""}
                 fill={fill}
@@ -23,7 +22,7 @@ function CarouselImage({ src, alt, fill, width, height, sizes, className, dragga
         );
     }
     return (
-        <CldImage
+        <Image quality={100}
             src={src}
             alt={alt || ""}
             fill={fill}
@@ -153,7 +152,7 @@ function CarouselCard({ item, cardClassName = "", onToggleExpand }) {
                 }}
             >
                 <CarouselImage
-                    src={item.image}
+                    src={item.image?.startsWith("/") ? item.image : `/FS-images/${item.image}.png`}
                     alt={item.name}
                     width={65}
                     height={65}
@@ -173,7 +172,7 @@ function CarouselCard({ item, cardClassName = "", onToggleExpand }) {
                 {/* Card Image */}
                 <div className="my-2.5 lg:my-3 w-[92%] sm:w-full h-[140px] sm:h-[165px] lg:h-[clamp(175px,13vw,220px)] rounded-tr-[16px] rounded-bl-[16px] lg:rounded-tr-[clamp(18px,1.5vw,24px)] lg:rounded-bl-[clamp(18px,1.5vw,24px)] overflow-hidden shadow-sm flex items-center justify-center mx-auto shrink-0 relative">
                     <CarouselImage
-                        src={item.img}
+                        src={item.img?.startsWith("/") ? item.img : `/FS-images/${item.img}.jpg`}
                         alt={item.name}
                         fill
                         sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 350px"

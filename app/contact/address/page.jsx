@@ -1,6 +1,6 @@
 "use client";
 
-import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 import Button from "@/app/components/common/Button";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
@@ -19,8 +19,8 @@ export default function ContactAddress() {
                     <div className="border border-gray-200 rounded-2xl flex flex-col justify-between overflow-hidden shadow-xs hover:shadow-md transition-shadow">
                         <div>
                             <div className="w-full h-[220px] sm:h-[260px] overflow-hidden relative group">
-                                <CldImage
-                                    src="japan-office"
+                                <Image quality={100}
+                                    src="/FS-images/japan-office.jpg"
                                     alt="Tokyo, Japan Head Office"
                                     fill
                                     sizes="(max-width: 1024px) 95vw, 33vw"
@@ -75,8 +75,8 @@ export default function ContactAddress() {
                     <div className="border border-gray-200 rounded-2xl flex flex-col justify-between overflow-hidden shadow-xs hover:shadow-md transition-shadow">
                         <div>
                             <div className="w-full h-[220px] sm:h-[260px] overflow-hidden relative group">
-                                <CldImage
-                                    src="india-office"
+                                <Image quality={100}
+                                    src="/FS-images/india-office.jpg"
                                     alt="Chennai, India Branch Office"
                                     fill
                                     sizes="(max-width: 1024px) 95vw, 33vw"
@@ -145,8 +145,8 @@ export default function ContactAddress() {
                     <div className="border border-gray-200 rounded-2xl flex flex-col justify-between overflow-hidden shadow-xs hover:shadow-md transition-shadow">
                         <div>
                             <div className="w-full h-[220px] sm:h-[260px] overflow-hidden relative group">
-                                <CldImage
-                                    src="registered-office"
+                                <Image quality={100}
+                                    src="/FS-images/registered-office.jpg"
                                     alt="Chennai, India Registered Office"
                                     fill
                                     sizes="(max-width: 1024px) 95vw, 33vw"

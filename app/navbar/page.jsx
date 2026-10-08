@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
 const navLinks = [
@@ -22,6 +22,7 @@ const languages = [
 export default function Navbar() {
     const { lang, setLang, t } = useLanguage();
     const pathname = usePathname();
+    const router = useRouter();
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isLangOpen, setIsLangOpen] = useState(false);
@@ -269,7 +270,7 @@ export default function Navbar() {
                         href="/"
                         className="group relative flex items-center shrink-0 rounded-2xl transition-all duration-300 hover:scale-105 active:scale-95"
                     >
-                        <Image
+                        <Image quality={100}
                             src="/FS-images/fuji-logo.png"
                             alt="FujiSakura"
                             width={290}
@@ -367,6 +368,7 @@ export default function Navbar() {
                                                 onClick={() => {
                                                     setLang(item.code);
                                                     setIsLangOpen(false);
+                                                    router.push("/");
                                                 }}
                                                 className={`w-full flex items-center justify-between gap-3 px-3 py-2 rounded-xl text-left text-sm font-medium transition-all cursor-pointer select-none touch-manipulation ${isSelected
                                                     ? "bg-[#FFB54E]/20 text-[#1a1a1a] font-bold"
@@ -496,6 +498,7 @@ export default function Navbar() {
                                                     onClick={() => {
                                                         setLang(item.code);
                                                         closeMenu();
+                                                        router.push("/");
                                                     }}
                                                     className={`px-3.5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer select-none touch-manipulation ${isSelected
                                                         ? "bg-[#FFB54E] text-[#1a1a1a] shadow-xs"

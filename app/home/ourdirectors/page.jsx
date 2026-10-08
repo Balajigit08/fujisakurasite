@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useMemo } from "react";
-import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
 import { useDeferredScrollAnimation } from "@/app/components/common/useDeferredScrollAnimation";
 
@@ -49,9 +49,9 @@ export default function Directors() {
                             className="w-full flex flex-col items-center text-center md:last:col-span-2 md:last:max-w-[280px] sm:md:last:max-w-[320px] md:last:mx-auto lg:last:col-span-1 lg:last:max-w-none"
                         >
                             <div className="w-[70vw] max-w-[300px] sm:max-w-[340px] aspect-square overflow-hidden rounded-2xl relative">
-                                <CldImage
+                                <Image quality={100}
                                     className="object-cover object-top"
-                                    src={img}
+                                    src={`/FS-images/${img}.png`}
                                     alt={alt || name}
                                     fill
                                     sizes="(max-width: 640px) 300px, 340px"
@@ -97,9 +97,9 @@ export default function Directors() {
                                     className="director-card flex flex-col items-center flex-shrink-0 w-[clamp(190px,18vw,335px)] text-center"
                                 >
                                     <div className="overflow-hidden rounded-[clamp(1.5rem,2vw,2.5rem)] w-[clamp(185px,17vw,325px)] aspect-square mx-auto relative">
-                                        <CldImage
+                                        <Image quality={100}
                                             className="object-cover object-center"
-                                            src={img}
+                                            src={`/FS-images/${img}.png`}
                                             alt={alt || name}
                                             fill
                                             sizes="(max-width: 1280px) 230px, (max-width: 1536px) 280px, 350px"

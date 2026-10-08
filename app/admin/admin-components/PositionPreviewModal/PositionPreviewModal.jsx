@@ -106,7 +106,7 @@ export default function PositionPreviewModal({ previewPosition, onClose, onEdit 
                         <div className="bg-[#EDF6FA] border border-[#34CBEA]/30 rounded-2xl p-5 sm:p-6 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">
                             <div className="flex items-center gap-4 min-w-0">
                                 <div className="w-16 h-16 sm:w-18 sm:h-18 shrink-0 rounded-2xl bg-white border border-gray-200 p-2 flex items-center justify-center overflow-hidden shadow-xs">
-                                    <Image
+                                    <Image quality={100}
                                         src={imageUrl}
                                         alt={previewPosition.title}
                                         width={72}

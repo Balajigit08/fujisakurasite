@@ -225,7 +225,7 @@ export default function StackScroll() {
 
                                     <div className="flex items-center gap-3.5">
                                         <div className="w-14 h-14 sm:w-16 sm:h-16 shrink-0 bg-slate-50 border border-slate-100 rounded-2xl p-2 flex items-center justify-center">
-                                            <Image
+                                            <Image quality={100}
                                                 src={s.image1}
                                                 alt={s.title}
                                                 width={64}
@@ -253,7 +253,7 @@ export default function StackScroll() {
                                         {s.lede}
                                     </p>
 
-                                    <Image
+                                    <Image quality={100}
                                         src={s.image}
                                         alt={s.title}
                                         width={600}
@@ -311,7 +311,7 @@ export default function StackScroll() {
                                         </div>
                                     </div>
                                     <div className="mt-7 md:mt-6 flex justify-center w-full">
-                                        <Image
+                                        <Image quality={100}
                                             src={s.image1}
                                             alt={s.title}
                                             width={260}
@@ -328,7 +328,7 @@ export default function StackScroll() {
                                         </p>
                                     )}
                                     <div className="flex-1 relative overflow-hidden rounded-md border border-neutral-100 min-h-[180px]">
-                                        <Image
+                                        <Image quality={100}
                                             src={s.image}
                                             alt={s.title}
                                             unoptimized

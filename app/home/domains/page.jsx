@@ -1,7 +1,6 @@
-
 "use client"
 import React, { useEffect, useRef, useState } from "react";
-import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -129,6 +128,13 @@ export default function Domains() {
                 }
             }
 
+            // Apply clip-path to hide cards 20px before they touch the center card
+            const clipLeft = centerLeft - 20;
+            const clipRight = centerRight + 20;
+            gsap.set(track, {
+                clipPath: `polygon(0% 0%, 0% 100%, ${clipLeft}px 100%, ${clipLeft}px 0%, ${clipRight}px 0%, ${clipRight}px 100%, 100% 100%, 100% 0%, 0% 0%)`
+            });
+
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: sectionRef.current,
@@ -154,15 +160,12 @@ export default function Domains() {
                 tl.add(label);
 
                 if (centerTrack) {
-                    tl.to(
-                        centerTrack,
-                        {
-                            x: -nextStep * CENTER_STEP,
-                            ease: "power3.inOut",
-                            duration: 1,
-                        },
-                        label
-                    );
+                    const currentCard = centerTrack.children[step];
+                    const nextCard = centerTrack.children[nextStep];
+                    if (currentCard && nextCard) {
+                        tl.to(currentCard, { opacity: 0, duration: 1, ease: "power3.inOut" }, label);
+                        tl.to(nextCard, { opacity: 1, duration: 1, ease: "power3.inOut" }, label);
+                    }
                 }
 
                 const targetIndex = startIndex + nextStep;
@@ -250,8 +253,8 @@ export default function Domains() {
                             {domains.map((domain, index) => (
                                 <div key={domain.id || index} className="w-full md:w-1/2 h-full flex-shrink-0 relative overflow-hidden px-2">
                                     <div className="w-full h-full relative overflow-hidden rounded-tl-[clamp(30px,4vw,50px)] rounded-br-[clamp(30px,4vw,50px)] rounded-tr-none rounded-bl-none shadow-xl bg-gray-900 border border-gray-200/50">
-                                        <CldImage
-                                            src={domain.img}
+                                        <Image quality={100}
+                                            src={`/FS-images/${domain.img}.jpg`}
                                             alt={domain.name}
                                             fill
                                             sizes="(max-width: 768px) 95vw, 50vw"
@@ -310,8 +313,8 @@ export default function Domains() {
                                     key={`${domain.id}-${index}`}
                                     className="absolute top-[48%] xl:top-[46%] 2xl:top-[45%] -translate-y-1/2 w-[clamp(150px,12.5vw,240px)] h-[clamp(220px,38vh,390px)] overflow-hidden rounded-tl-[clamp(30px,4vw,50px)] rounded-br-[clamp(30px,4vw,50px)] rounded-tr-none rounded-bl-none will-change-transform shadow-md"
                                 >
-                                    <CldImage
-                                        src={domain.img}
+                                    <Image quality={100}
+                                        src={`/FS-images/${domain.img}.jpg`}
                                         alt={domain.name}
                                         fill
                                         sizes="(max-width: 1024px) 160px, (max-width: 1536px) 200px, 260px"
@@ -324,12 +327,16 @@ export default function Domains() {
                         <div className="absolute left-1/2 top-[48%] xl:top-[46%] 2xl:top-[45%] z-20 h-[clamp(340px,58vh,600px)] w-[clamp(270px,24vw,490px)] -translate-x-1/2 -translate-y-1/2 pointer-events-none overflow-hidden rounded-tl-[clamp(30px,4vw,50px)] rounded-br-[clamp(30px,4vw,50px)] rounded-tr-none rounded-bl-none shadow-2xl">
                             <div
                                 ref={centerTrackRef}
-                                className="absolute flex h-full will-change-transform"
+                                className="absolute inset-0 h-full w-full"
                             >
                                 {domains.map((domain, index) => (
-                                    <div key={domain.id || index} className="w-[clamp(270px,24vw,490px)] h-full flex-shrink-0 relative overflow-hidden">
-                                        <CldImage
-                                            src={domain.img}
+                                    <div
+                                        key={domain.id || index}
+                                        className="absolute inset-0 w-full h-full overflow-hidden"
+                                        style={{ opacity: index === 0 ? 1 : 0 }}
+                                    >
+                                        <Image quality={100}
+                                            src={`/FS-images/${domain.img}.jpg`}
                                             alt={domain.name}
                                             fill
                                             sizes="(max-width: 1024px) 350px, (max-width: 1536px) 420px, 520px"
@@ -358,4 +365,4 @@ export default function Domains() {
             </div>
         </div>
     );
-} 
+}

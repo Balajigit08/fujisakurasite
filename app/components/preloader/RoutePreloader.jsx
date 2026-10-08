@@ -3,8 +3,7 @@
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 
-const getCldImageUrl = ({ src }) =>
-  `https://res.cloudinary.com/npifodto/image/upload/c_limit,f_auto,q_auto/v1/${src}`;
+const getLocalImageUrl = ({ src }) => `/FS-images/${src}.jpg`;
 
 const ROUTES_TO_PRELOAD = [
   "/about",
@@ -15,7 +14,7 @@ const ROUTES_TO_PRELOAD = [
   "/contact",
 ];
 
-const HERO_CLOUDINARY_IDS = [
+const HERO_IMAGE_IDS = [
   "what-we-do-top-left",
   "what-we-do-top-right",
   "industries-top-left",
@@ -46,17 +45,17 @@ export default function RoutePreloader({ isHomeReady }) {
         }
       });
 
-      // 2. Pre-warm above-the-fold hero images from Cloudinary CDN
+      // 2. Pre-warm above-the-fold hero images from local paths
       if (typeof window !== "undefined") {
-        HERO_CLOUDINARY_IDS.forEach((id) => {
+        HERO_IMAGE_IDS.forEach((id) => {
           try {
-            const url = getCldImageUrl({ src: id });
+            const url = getLocalImageUrl({ src: id });
             if (url) {
               const img = new Image();
               img.src = url;
             }
           } catch {
-            // Silently ignore if Cloudinary pre-warm fails
+            // Silently ignore if image pre-warm fails
           }
         });
       }

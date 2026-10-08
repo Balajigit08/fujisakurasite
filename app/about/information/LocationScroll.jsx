@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -124,8 +124,8 @@ export default function LocationScroll({ country, mapImage, blocks, pinPosition,
             >
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none px-4 md:px-12">
                     <div className="relative w-full max-w-[clamp(1000px,80vw,1600px)] aspect-[16/9] flex items-center justify-center">
-                        <CldImage
-                            src={mapImage}
+                        <Image quality={100}
+                            src={`/FS-images/${mapImage}.jpg`}
                             alt={`${country} Map`}
                             fill
                             sizes="(max-width: 1024px) 100vw, 80vw"
@@ -176,8 +176,8 @@ export default function LocationScroll({ country, mapImage, blocks, pinPosition,
                         {country}
                     </h2>
                     <div className="w-full max-w-[360px] sm:max-w-[480px] aspect-[16/10] overflow-hidden flex items-center justify-center relative">
-                        <CldImage
-                            src={mapImage}
+                        <Image quality={100}
+                            src={`/FS-images/${mapImage}.jpg`}
                             alt={`${country} Map`}
                             fill
                             sizes="480px"

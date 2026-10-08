@@ -11,7 +11,6 @@ const NOTICE_PERIODS = ["Immediate", "15 Days", "30 Days", "60 Days", "90 Days"]
 
 // Character limits
 const LIMIT_ROLE_NAME = 100;
-const LIMIT_JOB_DESC = 200;
 const LIMIT_RESPONSIBILITY = 200;
 const LIMIT_LANGUAGE = 50;
 const LIMIT_SKILL = 50;
@@ -247,8 +246,6 @@ export default function PositionFormModal({ isOpen, onClose, onSave, editingPosi
 
         if (!formData.jobDescription.trim()) {
             errors.jobDescription = "Job description is required.";
-        } else if (formData.jobDescription.trim().length >= LIMIT_JOB_DESC) {
-            errors.jobDescription = `Job description must be under ${LIMIT_JOB_DESC} characters.`;
         }
 
         const validResponsibilities = formData.responsibilities.filter((r) => r.trim().length > 0);
@@ -466,7 +463,7 @@ export default function PositionFormModal({ isOpen, onClose, onSave, editingPosi
                                         "
                                             />
                                         ) : formData.image ? (
-                                            <Image
+                                            <Image quality={100}
                                                 src={
                                                     formData.image.startsWith("job-images/")
                                                         ? `/api/images/${formData.image}`
@@ -911,19 +908,13 @@ export default function PositionFormModal({ isOpen, onClose, onSave, editingPosi
                                 <textarea
                                     rows={4}
                                     value={formData.jobDescription}
-                                    maxLength={LIMIT_JOB_DESC}
                                     onChange={(e) => {
                                         setFormData({
                                             ...formData,
                                             jobDescription: e.target.value,
                                         });
 
-                                        if (e.target.value.length >= LIMIT_JOB_DESC) {
-                                            setValidationErrors((prev) => ({
-                                                ...prev,
-                                                jobDescription: `Job description must be under ${LIMIT_JOB_DESC} characters.`,
-                                            }));
-                                        } else if (validationErrors.jobDescription) {
+                                        if (validationErrors.jobDescription && e.target.value.trim().length > 0) {
                                             setValidationErrors((prev) => ({
                                                 ...prev,
                                                 jobDescription: "",
@@ -950,8 +941,7 @@ export default function PositionFormModal({ isOpen, onClose, onSave, editingPosi
                                 focus:ring-1
                                 focus:ring-[#34CBEA]/10
                                 focus:border-[#34CBEA]
-                                ${validationErrors.jobDescription ||
-                                            formData.jobDescription.length >= LIMIT_JOB_DESC
+                                ${validationErrors.jobDescription
                                             ? "border-red-500 bg-red-50/20"
                                             : "border-gray-300"
                                         }
@@ -1213,7 +1203,6 @@ export default function PositionFormModal({ isOpen, onClose, onSave, editingPosi
                                     isSaving ||
                                     saving ||
                                     formData.roleName.length >= LIMIT_ROLE_NAME ||
-                                    formData.jobDescription.length >= LIMIT_JOB_DESC ||
                                     formData.responsibilities.some(
                                         (r) => r.length >= LIMIT_RESPONSIBILITY
                                     ) ||

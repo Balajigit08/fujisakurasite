@@ -1,6 +1,6 @@
 "use client";
 import { useRef } from "react";
-import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -374,8 +374,8 @@ export default function AIServicesZigzag() {
                       }`}
                   >
                     <div className="ai-service-media w-full max-w-[clamp(360px,42vw,680px)] 2xl:max-w-[clamp(500px,45vw,820px)] mx-auto overflow-hidden rounded-tl-[clamp(30px,4vw,50px)] rounded-br-[clamp(30px,4vw,50px)] rounded-tr-none rounded-bl-none border border-slate-100/80 relative aspect-[4/3] sm:aspect-[16/11] lg:aspect-[16/10] 2xl:aspect-[16/9.5]">
-                      <CldImage
-                        src={service.img}
+                      <Image
+                        src={`/FS-images/${service.img}.jpg`}
                         alt={service.title}
                         fill
                         priority={index < 2}

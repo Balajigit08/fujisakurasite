@@ -974,7 +974,7 @@ export function DisplacementHoverImage({
       {...props}
     >
 
-      <Image
+      <Image quality={100}
         src={src}
         alt={alt || ""}
         fill

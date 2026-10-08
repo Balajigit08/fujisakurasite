@@ -2,7 +2,6 @@
 
 import { useRef } from "react";
 import Image from "next/image";
-import { CldImage } from "next-cloudinary";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -14,20 +13,11 @@ if (typeof window !== "undefined") {
 function HeaderImage({ image }) {
     if (!image?.src) return null;
     const isLocalOrAbsolute = image.src.startsWith("/") || image.src.startsWith("http");
-    if (isLocalOrAbsolute) {
-        return (
-            <Image
-                src={image.src}
-                alt={image.alt || ""}
-                fill
-                sizes="250px"
-                className="object-cover object-center"
-            />
-        );
-    }
+    const resolvedSrc = isLocalOrAbsolute ? image.src : `/FS-images/${image.src}.jpg`;
+    
     return (
-        <CldImage
-            src={image.src}
+        <Image quality={100}
+            src={resolvedSrc}
             alt={image.alt || ""}
             fill
             sizes="250px"

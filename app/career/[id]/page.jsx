@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { CldImage, getCldImageUrl } from "next-cloudinary";
 import { useParams } from "next/navigation";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { FaMapMarkerAlt, FaCheck } from "react-icons/fa";
@@ -279,7 +278,7 @@ export default function CareerApplyPage() {
 
     const imageUrl = job.image_url
         ? (job.image_url.startsWith("job-images/") ? `/api/images/${job.image_url}` : job.image_url)
-        : (job.image || getCldImageUrl({ src: "fuji-logo" }));
+        : (job.image || "/FS-images/fuji-logo.png");
     const employmentType = job.employment_type || job.type || "Full Time";
 
     return (
@@ -293,8 +292,8 @@ export default function CareerApplyPage() {
                 )}
 
                 <div className="relative w-full h-[clamp(100px,20vw,200px)] rounded-tl-[clamp(30px,5vw,60px)] rounded-br-[clamp(30px,5vw,60px)] rounded-tr-none rounded-bl-none overflow-hidden mb-[clamp(1.5rem,3vw,2.5rem)] shadow-md">
-                    <CldImage
-                        src="career-top"
+                    <Image quality={100}
+                        src="/FS-images/career-top.jpg"
                         alt={job.title}
                         fill
                         priority
@@ -317,7 +316,7 @@ export default function CareerApplyPage() {
                         <div className="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm">
                             <div className="flex items-center gap-5">
                                 <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gray-50 border border-gray-100 p-2 flex items-center justify-center overflow-hidden shrink-0 shadow-xs">
-                                    <Image
+                                    <Image quality={100}
                                         src={imageUrl}
                                         alt={job.title}
                                         width={80}
@@ -352,7 +351,7 @@ export default function CareerApplyPage() {
                         <div className="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm space-y-6 sm:space-y-8">
                             <div>
                                 <h2 className="text-xl sm:text-2xl md:text-[clamp(1.4rem,1.75vw,2.25rem)] font-bold text-[#1B1B1B] mb-3 sm:mb-4 leading-tight">{t("career.job_description")}</h2>
-                                <p className="text-[#2E2E2E] text-base sm:text-lg md:text-[clamp(1.05rem,1.2vw,1.35rem)] leading-relaxed whitespace-pre-line">
+                                <p className="text-[#2E2E2E] text-base sm:text-lg md:text-[clamp(1.05rem,1.2vw,1.35rem)] leading-relaxed whitespace-pre-line max-h-[300px] overflow-y-auto pr-2">
                                     {job.description || "No description provided."}
                                 </p>
                             </div>

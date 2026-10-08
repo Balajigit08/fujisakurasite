@@ -81,7 +81,7 @@ export default function BrandLoader({
         {/* Centered Logo */}
         <div className="absolute inset-0 flex items-center justify-center p-3 pointer-events-none">
           <div className="relative w-[72%] h-[72%] flex items-center justify-center">
-            <Image
+            <Image quality={100}
               src="/FS-images/Logo-fs.png"
               alt="FujiSakura Logo"
               width={90}

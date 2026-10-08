@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useState, useEffect, useCallback, forwardRef } from "react";
-import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 import HTMLFlipBook from "react-pageflip";
 import { MdOutlineKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import gsap from "gsap";
@@ -264,8 +264,8 @@ export default function Testimonial() {
                             <span className="text-[clamp(1.5rem,2vw,2.5rem)] text-[#003154] font-bold block mb-1">{t("testimonials.stories_from")}</span>
                             <span className="text-[#34cbea]">{t("testimonials.clients")}</span>
                         </h2>
-                        <CldImage
-                            src="jmr-air-plane"
+                        <Image quality={100}
+                            src="/FS-images/jmr-air-plane.svg"
                             alt=""
                             width={450}
                             height={450}
@@ -276,9 +276,9 @@ export default function Testimonial() {
                     <div className="mt-32 flex flex-wrap items-center justify-between gap-6">
                         <div className="flex items-center gap-4">
                             <div className="flex -space-x-3">
-                                <CldImage src="stories1" alt="user" width={40} height={40} className="w-10 h-10 rounded-full border-2 border-white object-cover" />
-                                <CldImage src="stories2" alt="user" width={40} height={40} className="w-10 h-10 rounded-full border-2 border-white object-cover" />
-                                <CldImage src="stories3" alt="user" width={40} height={40} className="w-10 h-10 rounded-full border-2 border-white object-cover" />
+                                <Image quality={100} src="/FS-images/stories1.png" alt="user" width={40} height={40} className="w-10 h-10 rounded-full border-2 border-white object-cover" />
+                                <Image quality={100} src="/FS-images/stories2.png" alt="user" width={40} height={40} className="w-10 h-10 rounded-full border-2 border-white object-cover" />
+                                <Image quality={100} src="/FS-images/stories3.png" alt="user" width={40} height={40} className="w-10 h-10 rounded-full border-2 border-white object-cover" />
                                 <div className="w-10 h-10 rounded-full border-2 border-white bg-gray-800 text-white flex items-center justify-center text-lg font-bold">+</div>
                             </div>
                             <p className="customer-count-text text-[clamp(0.85rem,1.05vw,1.25rem)] text-gray-500 leading-[1.4]">

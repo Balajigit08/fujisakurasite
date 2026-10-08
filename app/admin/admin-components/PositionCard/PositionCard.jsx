@@ -30,7 +30,7 @@ export default function PositionCard({ job = {}, onEdit, onDelete, onPreview, on
 
             <div className="flex flex-col md:flex-row md:items-center p-6 pl-10 md:pl-12 lg:pr-12 gap-6 lg:gap-10 justify-between">
                 <div className="w-18 h-18 sm:w-22 sm:h-22 flex-shrink-0 flex items-center justify-center rounded-2xl bg-gray-50 border border-gray-100 overflow-hidden p-2.5 shadow-xs">
-                    <Image
+                    <Image quality={100}
                         src={imageUrl || "/FS-images/Logo-fs.png"}
                         alt={job.title}
                         width={88}

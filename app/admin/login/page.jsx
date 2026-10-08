@@ -47,7 +47,7 @@ export default function AdminLoginPage() {
   return (
     <div className="relative min-h-screen w-full flex flex-col items-center justify-center p-4 sm:p-6 overflow-hidden my-auto">
       <div className="absolute inset-0 z-0 select-none">
-        <Image
+        <Image quality={100}
           src="/FS-images/signin-bg.png"
           alt="Japanese Gate Background"
           fill
@@ -61,7 +61,7 @@ export default function AdminLoginPage() {
         <div className="bg-white/95 backdrop-blur-sm rounded-2xl border border-gray-200 overflow-hidden shadow-2xl">
           <div className="px-6 py-7 sm:px-8 sm:py-8">
             <div className="flex justify-center mb-4 sm:mb-5">
-              <Image
+              <Image quality={100}
                 src="/FS-images/fuji-logo.png"
                 alt="FujiSakura Technologies"
                 width={170}

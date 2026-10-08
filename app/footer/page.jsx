@@ -3,13 +3,13 @@
 "use client";
 
 import Link from "next/link";
-import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 import PartnerForm from "./PartnerForm";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
 const socials = [
-  { name: "Facebook", href: "https://www.facebook.com/Fujisakuratech/", icon: "facebook" },
-  { name: "LinkedIn", href: "https://www.linkedin.com/company/fujisakuratech/", icon: "linkedin" },
+  { name: "Facebook", href: "https://www.facebook.com/Fujisakuratech/", icon: "/FS-images/facebook.png" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/company/fujisakuratech/", icon: "/FS-images/linkedin.png" },
 ];
 
 const topLinks = [
@@ -31,8 +31,8 @@ export default function Footer() {
     >
       {/* Background Image & Gradient Overlay */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <CldImage
-          src="footer-bg"
+        <Image quality={100}
+          src="/FS-images/footer-bg.jpg"
           alt=""
           fill
           sizes="100vw"
@@ -112,7 +112,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="transition transform hover:scale-110"
                 >
-                  <CldImage
+                  <Image quality={100}
                     src={item.icon}
                     alt={item.name}
                     width={44}

@@ -15,6 +15,27 @@ export function useDeferredScrollAnimation(initFn, deps = []) {
             isInitialized = true;
             try {
                 cleanupRef.current = initFn();
+                
+                // Set up global resize observer to refresh ScrollTrigger if layout shifts
+                import("gsap/ScrollTrigger").then(({ ScrollTrigger }) => {
+                    const ro = new ResizeObserver(() => {
+                        ScrollTrigger.refresh();
+                    });
+                    ro.observe(document.body);
+                    
+                    const oldCleanup = cleanupRef.current;
+                    cleanupRef.current = () => {
+                        if (typeof oldCleanup === "function") oldCleanup();
+                        ro.disconnect();
+                    };
+                    
+                    if (document.readyState === "complete") {
+                        setTimeout(() => ScrollTrigger.refresh(), 100);
+                    } else {
+                        window.addEventListener("load", () => ScrollTrigger.refresh());
+                    }
+                });
+
             } catch (err) {
                 console.error("Error initializing deferred animation:", err);
             }

@@ -2,7 +2,7 @@
 
 import React, { useRef, useState, useEffect, useMemo } from "react";
 import Link from "next/link";
-import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -158,20 +158,34 @@ export default function Provides() {
             const CARD_STEP = ENTER_DURATION + HOLD_DURATION;
             const lastStart = (cards.length - 1) * CARD_STEP;
             const totalDuration = lastStart + ENTER_DURATION + LAST_CARD_HOLD_DURATION;
-            const PX_PER_UNIT = 320;
+            const PX_PER_UNIT = window.innerHeight * 0.6;
 
             const startY = "100vh";
             const endY = "-100vh";
+
+            const snapPoints = Array.from(cards).map((_, i) => {
+                const startTime = i * CARD_STEP;
+                const holdMid = i === cards.length - 1
+                    ? startTime + ENTER_DURATION + LAST_CARD_HOLD_DURATION / 2
+                    : startTime + ENTER_DURATION + HOLD_DURATION / 2;
+                return holdMid / totalDuration;
+            });
 
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: outerRef.current,
                     start: "top top",
-                    end: `+=${totalDuration * PX_PER_UNIT}`,
-                    scrub: 0.5,
+                    end: () => `+=${totalDuration * PX_PER_UNIT}`,
+                    scrub: 1,
                     pin: true,
                     pinSpacing: true,
                     anticipatePin: 1,
+                    snap: {
+                        snapTo: snapPoints,
+                        duration: { min: 0.2, max: 0.8 },
+                        delay: 0.1,
+                        ease: "power1.inOut"
+                    },
                     invalidateOnRefresh: true,
                     onEnter: () => gsap.to(navMaskRef.current, { opacity: 1, duration: 0.2 }),
                     onLeave: () => gsap.to(navMaskRef.current, { opacity: 0, duration: 0.2 }),
@@ -290,8 +304,8 @@ export default function Provides() {
                         {DOMAINS.map((domain) => (
                             <div key={domain.id} className="w-full md:w-1/2 flex-shrink-0 px-4 sm:px-6 md:px-4 flex flex-col items-center">
                                 <div className="relative w-full aspect-square sm:aspect-video rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl mb-6 bg-black/10">
-                                    <CldImage
-                                        src={domain.img}
+                                    <Image quality={100}
+                                        src={`/FS-images/${domain.img}.jpg`}
                                         alt={domain.mainTitle}
                                         fill
                                         sizes="(max-width: 768px) 100vw, 500px"
@@ -343,7 +357,7 @@ export default function Provides() {
                         ref={bgRef}
                         className="relative w-full h-full overflow-hidden flex flex-col items-center justify-start lg:justify-center bg-white lg:bg-[#34CBEA] pt-24 pb-20 lg:py-0"
                     >
-                        <div className="relative z-10 w-full flex flex-col items-center justify-start lg:absolute lg:top-[8%] xl:top-[12%] 2xl:top-[14%] lg:left-0 lg:right-0 pointer-events-none">
+                        <div className="relative z-10 w-full flex flex-col items-center justify-start lg:absolute lg:top-[12%] xl:top-[16%] 2xl:top-[18%] lg:left-0 lg:right-0 pointer-events-none">
                             <h2
                                 ref={subtitleRef}
                                 className="uppercase leading-[0.9] tracking-tight text-[clamp(2.2rem,4.5vw,5.5rem)] text-[#34CBEA] lg:text-white text-center font-bold"
@@ -369,7 +383,7 @@ export default function Provides() {
 
                                         {/* Center image */}
                                         <div className="img-container relative flex-shrink-0 mx-auto rounded-2xl sm:rounded-3xl overflow-hidden pointer-events-auto shadow-xl self-center">
-                                            <CldImage src={domain.img} alt={domain.mainTitle} fill sizes="(max-width: 1024px) 100vw, (max-width: 1366px) 440px, (max-width: 1749px) 560px, 680px" className="object-cover" />
+                                            <Image quality={100} src={`/FS-images/${domain.img}.jpg`} alt={domain.mainTitle} fill sizes="(max-width: 1024px) 100vw, (max-width: 1366px) 440px, (max-width: 1749px) 560px, 680px" className="object-cover" />
                                             <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(to_top,rgba(0,0,0,0.4)_0%,transparent_50%)]" />
                                         </div>
 

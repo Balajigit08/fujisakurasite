@@ -170,7 +170,7 @@ export function MouseFollower() {
       <div
         className="relative w-full h-full rounded-full flex items-center justify-center bg-gradient-to-br from-[#FFC56E] to-[#FF9E2A] shadow-[0_0_12px_4px_rgba(255,181,78,0.35),0_4px_14px_rgba(255,160,40,0.4),0_1px_3px_rgba(0,0,0,0.1)] border border-white/50"
       >
-        <Image
+        <Image quality={100}
           src="/FS-images/Logo-fs.png"
           alt="Logo"
           width={20}

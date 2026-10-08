@@ -2,7 +2,7 @@
 
 import React, { useRef, useEffect, useState } from "react";
 import Image from "next/image";
-import { getCldImageUrl } from "next-cloudinary";
+
 import { FaStar } from "react-icons/fa";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -96,7 +96,7 @@ export default function CareerPage() {
                                     : "N/A");
                                 const imageUrl = job.image_url
                                     ? (job.image_url.startsWith("job-images/") ? `/api/images/${job.image_url}` : job.image_url)
-                                    : (job.image || getCldImageUrl({ src: "fuji-logo" }));
+                                    : (job.image || "/FS-images/fuji-logo.png");
                                 const employmentType = job.employment_type || job.type || "Full Time";
                                 const noticePeriod = job.notice_period || job.noticePeriod || "30 Days";
 
@@ -115,7 +115,7 @@ export default function CareerPage() {
 
                                         <div className="flex flex-col md:flex-row md:items-center p-6 pl-10 md:pl-12 lg:pr-12 gap-6 lg:gap-12 justify-between">
                                             <div className="w-18 h-18 sm:w-20 sm:h-20 lg:w-24 lg:h-24 flex-shrink-0 flex items-center justify-center rounded-xl bg-gray-50 border border-gray-100 overflow-hidden p-1.5 shadow-xs">
-                                                <Image
+                                                <Image quality={100}
                                                     src={imageUrl}
                                                     alt={job.title}
                                                     width={96}

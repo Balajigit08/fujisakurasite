@@ -15,9 +15,9 @@ if (typeof window !== "undefined") {
     gsap.registerPlugin(ScrollTrigger, useGSAP);
 }
 
-const clientCentricImg = "https://res.cloudinary.com/npifodto/image/upload/c_limit,w_800/f_auto/q_auto/v1/client-centric-approach";
-const effectiveCollabImg = "https://res.cloudinary.com/npifodto/image/upload/c_limit,w_800/f_auto/q_auto/v1/effective-collaboration";
-const qualityDeliveredImg = "https://res.cloudinary.com/npifodto/image/upload/c_limit,w_800/f_auto/q_auto/v1/quality-delivered";
+const clientCentricImg = "/FS-images/client-centric-approach.jpg";
+const effectiveCollabImg = "/FS-images/effective-collaboration.jpg";
+const qualityDeliveredImg = "/FS-images/quality-delivered.jpg";
 
 function ExpandPanel({ isOpen, text }) {
     const panelRef = useRef(null);
@@ -251,7 +251,7 @@ export default function OurValues() {
                     ref={firstImgRef}
                     className="first-image-container relative lg:absolute lg:inset-0 overflow-hidden z-10 w-full min-h-[480px] sm:min-h-[550px] lg:min-h-0 lg:h-full py-16 sm:py-20 px-6 sm:px-12 flex items-center justify-center shadow-xl"
                 >
-                    <Image src="https://res.cloudinary.com/npifodto/image/upload/c_limit,w_1200/f_auto/q_auto/v1/vision" alt="Vision" fill unoptimized sizes="100vw" className="object-cover -z-10" />
+                    <Image quality={100} src="/FS-images/vision.jpg" alt="Vision" fill unoptimized sizes="100vw" className="object-cover -z-10" />
                     <div className="absolute inset-0 bg-black/60 z-10" />
 
                     <div className="relative flex flex-col items-center justify-center p-4 sm:p-8 z-20 text-white text-center">
@@ -268,7 +268,7 @@ export default function OurValues() {
                     ref={secondImgRef}
                     className="second-image-container relative lg:absolute lg:inset-0 overflow-hidden z-20 w-full min-h-[480px] sm:min-h-[550px] lg:min-h-0 lg:h-full py-16 sm:py-20 px-6 sm:px-12 flex items-center justify-center shadow-xl"
                 >
-                    <Image src="https://res.cloudinary.com/npifodto/image/upload/c_limit,w_1200/f_auto/q_auto/v1/mission" alt="Mission" fill unoptimized sizes="100vw" className="object-cover -z-10" />
+                    <Image quality={100} src="/FS-images/mission.jpg" alt="Mission" fill unoptimized sizes="100vw" className="object-cover -z-10" />
 
                     <div className="absolute inset-0 z-10" />
 
